@@ -62,7 +62,7 @@ const LandingPage = () => {
           QUIZZES AT GLANCE
         </p>
         <h1 className="animated-item text-5xl md:text-6xl font-bold mb-4">
-          <BackgroundBeamsWithCollision className="bg-transparent text-white">
+          <BackgroundBeamsWithCollision className="bg-transparent text-white mb-[-3rem]">
             Discover Your
           </BackgroundBeamsWithCollision> 
           <br />
@@ -77,7 +77,7 @@ const LandingPage = () => {
           #1 Quiz Backed by Science
         </p>
 
-        <div className="flex gap-4 justify-center">
+        <div className="flex flex-col gap-3 w-full h-full justify-center">
           <button 
           className="animated-item bg-purple-500 text-white px-8 py-3 rounded-full font-medium hover:bg-purple-600 transition-colors"
           onClick={() => navigate("/takequiz")}
