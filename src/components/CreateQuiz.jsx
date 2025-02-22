@@ -39,13 +39,33 @@ const CreateQuiz = () => {
     <div className="font-poppins min-h-screen bg-black flex flex-col items-center justify-center relative px-4">
       {/* Background Decoration */}
       <div className="background-effect absolute top-10 left-10 opacity-20">
-        <svg width="100" height="100" viewBox="0 0 100 100" className="text-purple-300">
-          <path d="M10,50 Q25,25 50,50 T90,50" fill="none" stroke="currentColor" strokeWidth="2" />
+        <svg
+          width="100"
+          height="100"
+          viewBox="0 0 100 100"
+          className="text-purple-300"
+        >
+          <path
+            d="M10,50 Q25,25 50,50 T90,50"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          />
         </svg>
       </div>
       <div className="background-effect absolute bottom-10 right-10 opacity-20">
-        <svg width="100" height="100" viewBox="0 0 100 100" className="text-purple-300">
-          <path d="M10,50 Q25,25 50,50 T90,50" fill="none" stroke="currentColor" strokeWidth="2" />
+        <svg
+          width="100"
+          height="100"
+          viewBox="0 0 100 100"
+          className="text-purple-300"
+        >
+          <path
+            d="M10,50 Q25,25 50,50 T90,50"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          />
         </svg>
       </div>
 
@@ -56,10 +76,15 @@ const CreateQuiz = () => {
       </div>
 
       {/* Form */}
-      <form onSubmit={handleSubmit} className="bg-gray-900 p-8 rounded-xl shadow-lg max-w-md w-full">
+      <form
+        onSubmit={handleSubmit}
+        className="bg-gray-900 p-8 rounded-xl shadow-lg max-w-md w-full"
+      >
         {/* Question Field */}
         <div className="mb-4">
-          <label className="animated-item text-white block mb-2 text-lg font-medium">Add Question</label>
+          <label className="animated-item text-white block mb-2 text-lg font-medium">
+            Add Question
+          </label>
           <input
             type="text"
             value={question}
@@ -72,7 +97,9 @@ const CreateQuiz = () => {
 
         {/* Answer Type Selection */}
         <div className="mb-4">
-          <label className="animated-item text-white block mb-2 text-lg font-medium">Select Answer Type</label>
+          <label className="animated-item text-white block mb-2 text-lg font-medium">
+            Select Answer Type
+          </label>
           <select
             value={answerType}
             onChange={(e) => setAnswerType(e.target.value)}
@@ -85,7 +112,9 @@ const CreateQuiz = () => {
 
         {/* Answer Input */}
         <div className="mb-6">
-          <label className="animated-item text-white block mb-2 text-lg font-medium">Answer</label>
+          <label className="animated-item text-white block mb-2 text-lg font-medium">
+            Answer
+          </label>
           {answerType === "one-word" ? (
             <input
               type="text"
