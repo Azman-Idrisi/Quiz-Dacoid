@@ -44,7 +44,6 @@ Follow these instructions to run the app locally:
    ```bash
    npm run dev
    ```
-5. Open your browser and go to `http://localhost:3000`.
 
 ## Live Demo
 Check out the deployed version of the app:
